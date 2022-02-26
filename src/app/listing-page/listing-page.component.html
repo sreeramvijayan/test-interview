@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Listing Page</h2>
+    <table class="table">
+        <thead>
+            
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody *ngIf="tablevalue">
+            <tr>
+                <td>{{tablevalue.fname}}</td>
+                
+                <td>{{tablevalue.lname}}</td>
+                
+                <td>{{tablevalue.email}}</td>
+                
+                <td><button class="btn btn-success" type="button" (click)="Edit(tablevalue)">Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
